@@ -1,0 +1,13 @@
+name: Docker Build & Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+      steps:
+        - name: Clone repository
+          uses: actions/checkout@v4
