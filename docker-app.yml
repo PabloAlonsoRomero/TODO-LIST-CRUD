@@ -6,3 +6,21 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: 12345
+    volumes:
+      - mysql_todolistExamen:/var/lib/mysql
+
+  todolistExamen:
+    image: todolistExamen:latest
+    container_name: todolistExamen
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DB: ${MYSQL_DB}
+      MYSQL_HOST: mysql
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_todolistExamen:
