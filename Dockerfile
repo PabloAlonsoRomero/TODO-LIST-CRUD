@@ -1,5 +1,5 @@
 # Imagen Base
-FROM nodesource/nsolid
+FROM node
 
 # Crear directorio donde va a vivir mi aplicación
 WORKDIR /app
