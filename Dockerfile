@@ -17,4 +17,4 @@ COPY . .
 RUN npm run build
 
 # Comando de inicio de contenedor
-CMD ["node", "src/index.ts"]
+CMD ["node", "dist/src/index.js"]
