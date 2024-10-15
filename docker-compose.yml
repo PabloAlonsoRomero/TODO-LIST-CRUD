@@ -10,7 +10,7 @@ services:
       - mysql_todolistexamen:/var/lib/mysql
 
   todolistExamen:
-    image: todolistexamen:latest
+    image: pabloalonso24/todolistexamen:latest
     container_name: todolistExamen
     ports:
       - "3000:3000"
