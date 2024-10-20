@@ -2,7 +2,8 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 
 
 @Table({
-    tableName: 'tareas'
+    tableName: 'tarea',
+    freezeTableName: true,
 })
 export class Tarea extends Model {
     @Column({
