@@ -3,7 +3,7 @@ import { Column, DataType, Model, Table } from "sequelize-typescript";
 
 @Table({
     tableName: 'tarea',
-    freezeTableName: true,
+    freezeTableName: true
 })
 export class Tarea extends Model {
     @Column({
