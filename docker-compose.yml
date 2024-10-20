@@ -25,6 +25,7 @@ services:
       - mysql
     networks:
       - todolist_network
+    command: ["wait-for-it", "mysql:3306", "--", "node", "dist/src/index.js"]
 
 networks:
   todolist_network:
