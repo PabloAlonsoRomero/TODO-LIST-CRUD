@@ -114,5 +114,5 @@ app.use((err: any, req: Request, res: Response, next: Function) => {
 });
 
 app.listen(3000, () => {
-    console.log("Aplicacion corriendo en el puerto 3000")
+    console.log("Aplicacion corriendo en el puerto 3000 🚀");
 })
